@@ -24,7 +24,11 @@ a=int(input ("Number of days for which analysis must be done: "))
 b = input("Enter the stock quote: ")
 d= input("Enter the file extension in csv or xlsx: ")
 address = "Database/{}.{}".format(b, d)
-df = pd.read_csv(address, index_col="Date")
+if d == 'csv':
+	df = pd.read_csv(address, index_col="Date")
+else:
+	df = pd.read_excel(address, index_col="Date")
+
 df = df.tail(c)
 df.index = pd.to_datetime(df.index)
 
