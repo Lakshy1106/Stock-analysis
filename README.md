@@ -15,7 +15,7 @@ Preparing to use these codes.
 How to run these codes.
 1) To run these codes you will need python installed in your system.
 2) For installing python on windows please download the installer file from their official website. https://www.python.org/downloads/windows/
-Note - for linux users python must be ususlally installed by default in your computer.
+Note - for linux users python must be usually installed by default in your computer.
 3) For running these codes you must have the following python packages pre installed.
 	1) Tensorflow
 	2) Keras
@@ -28,6 +28,6 @@ Note - for linux users python must be ususlally installed by default in your com
 	2) In Linux open terminal and use this command - python3 *insert code filename here*
 
 Extra notes
-1) Download the max size of data for the stock you need to analyse.(You can choose the range of data to be analysed from the pprogram itself.)
+1) Download the max size of data for the stock you need to analyse.(You can choose the range of data to be analysed from the program itself.)
 2) Currently only csv and excel are supported.
 3) Only the Close price of the particular stock is currently analysed, I will be adding a feature for analysing different parameters like Open price, High Low extra soon.
