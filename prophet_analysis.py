@@ -18,7 +18,11 @@ a = int(input("What is your time frame of analysis?: "))
 b = input("Enter the stock quote: ")
 c = input("Enter the file format: ")
 address = "Database/{}.{}".format(b,c)
-df = pd.read_csv(address)
+if c == 'csv':
+	df = pd.read_csv(address, index_col="Date")
+else:
+	df = pd.read_excel(address, index_col="Date")
+
 df = df.tail(a)
 
 #-----------------------------------------------------
