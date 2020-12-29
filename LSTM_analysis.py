@@ -18,8 +18,8 @@ plt.style.use('fivethirtyeight')
 
 b = input("Enter the stock quote: ")
 d = input("Enter the file extension in csv or xlsx: ")
-a = int(input ("Enter the number of days to be analysed: "))
-c = int(input("Number of days for short term memory: "))
+c = int(input ("Enter the number of days to be analysed: "))
+a = int(input("Number of days for short term memory: "))
 address = "Database/{}.{}".format(b, d)
 
 if d == 'csv':
