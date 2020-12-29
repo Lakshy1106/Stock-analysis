@@ -20,9 +20,9 @@ a = int(input("Enter the number of days to be analysed: "))
 address = "Database/{}.{}".format(b,c)
 
 if c == 'csv':
-	df = pd.read_csv(address, index_col="Date")
+	df = pd.read_csv(address)
 else:
-	df = pd.read_excel(address, index_col="Date")
+	df = pd.read_excel(address)
 
 df = df.tail(a)
 
