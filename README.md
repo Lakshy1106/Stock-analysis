@@ -1,6 +1,7 @@
 # Stock-market-analysis
 
 - This project is currently being developed will be updated with more tools for analysis and present codes will be refined.
+- Latest update info - fixed a few issues.
 
 This repository contains the  codes I have created for stock market analysis, it is meant for public use and database which will be analysed must be downloaded by the user.
 (A good website for downloading databases is yahoo finance.)
