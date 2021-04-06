@@ -17,9 +17,9 @@ a = int(input("Enter the number of days to be analysed: "))
 address = "Database/{}.{}".format(b,c)
 
 if c == 'csv':
-	df = pd.read_csv(address, index_col="Date")
+	data = pd.read_csv(address, index_col="Date")
 else:
-	df = pd.read_excel(address, index_col="Date")
+	data = pd.read_excel(address, index_col="Date")
 data.tail(a)
 data.index = pd.to_datetime(data.index)
 
@@ -44,7 +44,7 @@ ema_l = data['Close'].ewm(span=y, adjust=False).mean()
 #----------------------------------------
 # Displaying results
 #----------------------------------------
-x = int(input('''
+choice = int(input('''
 Choose the type of Averaging for analysis.
 1)WMA (Weighted)
 2)SMA (Simple)
@@ -54,13 +54,13 @@ Choose the type of Averaging for analysis.
 plt.figure(figsize=(12, 6))
 plt.plot(data['Close'], label="Price")
 
-if x == 1:
+if choice == 1:
     plt.plot(wma, label="{}-Day WMA".format(x))
     plt.plot(wma_l, label="{}-Day WMA".format(y))
-elif x == 2:
+elif choice == 2:
     plt.plot(sma, label="{}-Day SMA".format(x))
     plt.plot(sma_l, label="{}-Day SMA".format(y))
-elif x == 3:
+elif choice == 3:
     plt.plot(ema, label="{}-Day EMA".format(x))
     plt.plot(ema_l, label="{}-Day EMA".format(y))
 #Labelling
