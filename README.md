@@ -24,6 +24,7 @@ Note - for linux users python must be ususlally installed by default in your com
 	3) Numpy
 	4) Matplotlib
 	5) Pandas
+	6) fbprophet
 
 4) For installing above packages use the followng code in your command prompt - pip install *insert package name here*
 
