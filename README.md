@@ -11,7 +11,7 @@ Preparing to use these codes.
 1) Download all the codes in your computer.
 2) Extract the zip file.
 3) To add your database download the data files in csv or excel format from any website you choose. (yahoo finance has been tested and must be preferred)
-4) Use the Database folder inside the folder you extracted to save all your csv/xlsx files.
+4) Use the Database folder inside the folder you extracted to save all your csv/xlsx files. (It already has a test file for you.)
 5) When running the code put the correct file name of the data file and code must analyse the data.
 
 How to run these codes.
