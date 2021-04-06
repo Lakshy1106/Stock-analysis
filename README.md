@@ -2,7 +2,7 @@
 
 - This project is currently being developed will be updated with more tools for analysis and present codes will be refined.
 - Latest update details.
-	- fixes applied in lstm_analysis.py and prophet_analysis.py
+	- completely revamped structure of code for better and streamlined interface.
 
 This repository contains the  codes I have created for stock market analysis, it is meant for public use and database which will be analysed must be downloaded by the user.
 (A good website for downloading databases is yahoo finance.)
@@ -10,7 +10,7 @@ This repository contains the  codes I have created for stock market analysis, it
 Preparing to use these codes.
 1) Download all the codes in your computer.
 2) Extract the zip file.
-3) To add your database download the data files in csv or excel format from any website you choose. (yahoo finance has been tested and must be preferred)
+3) Add your csv files to the database after downloading them from any website of your choice. (yahoo finance has been tested and must be preferred)
 4) Use the Database folder inside the folder you extracted to save all your csv/xlsx files. (It already has a test file for you.)
 5) When running the code put the correct file name of the data file and code must analyse the data.
 
